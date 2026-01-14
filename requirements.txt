@@ -1,0 +1,15 @@
+langchain
+langchain-community
+langchain-google-genai
+langchain-core
+google-generativeai
+faiss-cpu
+pypdf
+streamlit
+tiktoken
+python-dotenv 
+huggingface-hub
+sentence-transformers
+pydantic
+langchain-huggingface
+bcrypt

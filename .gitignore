@@ -11,6 +11,16 @@ vector_store/
 __pycache__/
 *.pyc
 
+# Database
+*.sqlite
+
+# Debug/Utility scripts
+debug_import.py
+fix_env_encoding.py
+inspect_env.py
+repair_env.py
+test_auth_flow.py
+
 # OS files
 Thumbs.db
 .DS_Store

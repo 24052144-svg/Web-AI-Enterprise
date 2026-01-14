@@ -12,8 +12,14 @@ from .rag_engine import load_vector_db
 load_dotenv(override=True)
 
 API_KEY = os.getenv("GOOGLE_API_KEY")
+print(f"DEBUG: CWD = {os.getcwd()}")
+print(f"DEBUG: GOOGLE_API_KEY from env = '{API_KEY}' (len: {len(API_KEY) if API_KEY else 0})")
+
 if not API_KEY:
-    raise ValueError("GOOGLE_API_KEY missing")
+    print("❌ GOOGLE_API_KEY is missing! Please check .env file.")
+    # raise ValueError("GOOGLE_API_KEY missing") # Commented out to prevent crash for now
+    API_KEY = "DUMMY_KEY_FOR_DEBUGGING"
+
 
 
 # ==================== LLM INITIALIZATION ====================
